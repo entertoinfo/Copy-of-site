@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="/assets/css/slick.css">
   <link rel="stylesheet" href="/assets/css/jquery.formstyler.css">
   <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/media.css">
 </head>
 
 <body>
@@ -227,6 +228,7 @@
                     Тема вопроса
                     <select>
                       <!--* Селект для выбора варианта темы -->
+                      <option selected disabled>Выберите тему</option>
                       <option>-----------</option>
                       <option>-----------</option>
                       <option>-----------</option>
@@ -414,9 +416,13 @@
     </div>
   </footer>
 
-  <div style="display: none;" id="animatedModal" class="animated-modal">
-    <h2>Hello!</h2>
-    <p>This is animated content! Cool, right?</p>
+
+  <div id="animatedModal" class="animated-modal">
+    <form>
+      <input type="text" placeholder="Ваше имя">
+      <input type="text" placeholder="Ваш телефон">
+      <input type="submit" value="Отправить">
+    </form>
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
